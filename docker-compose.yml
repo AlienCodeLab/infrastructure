@@ -17,7 +17,7 @@ services:
 
   notification-service:
     build:
-      context: ./notification-service
+      context: ../notification-service
       dockerfile: Dockerfile
     ports:
       - 8080:8080
@@ -27,7 +27,7 @@ services:
       - app-tier
   user-service:
       build:
-        context: ./User-service
+        context: ../User-service
         dockerfile: Dockerfile
       ports:
         - "8081:8080"
